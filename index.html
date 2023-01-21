@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="/semantic.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {font-family: 'Outfit', sans-serif;}
+  </style>
+</head>
+<body>
+
+  <div class="w-screen h-screen flex justify-center items-center " style="background-color: hsl(217, 54%, 11%);" >
+    <div class="relative w-80 p-4 sm:w-80 rounded-xl" style="height: 450px; ;background-color: hsl(216, 50%, 16%);">
+      <!--image-->
+      
+        <div class="absolute  top-0 left-0 w-full p-4">
+          <a href="#">
+          <div class="relative w-full h-full">
+            <div class="absolute  top-0 left-0 rounded-xl w-full h-64 sm:h-64 sm:w-full bg-center bg-cover bg-[url('images/image-equilibrium.jpg')]" >
+
+            </div>
+            <div  class="absolute hover:flex hover:justify-center hover:items-center opacity-0 hover:opacity-60  top-0 left-0  rounded-xl w-full h-64 sm:h-64 sm:w-full bg-mycyan">
+              <div class="w-10 h-10 bg-center bg-cover bg-[url('images/icon-view.svg')]" >
+
+              </div>
+            </div>
+          </div>    
+          </a>
+        </div>
+      
+
+
+      <div class="absolute top-72" >
+
+      
+
+      <!--titre 1-->
+      <div class="my-4">
+        <a href="#" class="text-white  hover:text-mycyan text-xl font-semibold">
+          Equilibrium #3429
+        </a>
+      </div>
+
+      <!--text-->
+      <div class="mb-4">
+        <p class="text-lg mr-4"  style="color: hsl(215, 51%, 70%);">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+
+      <!--line 4-->
+      <div class="flex justify-between w-72" >
+        <div class="flex" style="color: hsl(178, 100%, 50%);" >
+          <div class="w-3 h-6 mr-2 bg-center bg-cover bg-[url('images/icon-ethereum.svg')]" ></div>
+          <div>0.041 ETH</div>
+        </div>
+        <div style="color: hsl(215, 51%, 70%);" >
+          3 days left
+        </div>
+      </div>
+
+      <div class="w-72 my-4 " style="height: 0.1px;background-color: hsl(215, 32%, 27%);" >
+
+      </div>
+
+      <!--line 5-->
+      <div class="flex items-center">
+        <div class="w-8 h-8 bg-cover bg-center bg-[url('images/image-avatar.png')]" >
+
+        </div>
+        <div class="text-white ml-2" >
+          <a href="#">
+            <span class="text-blue-soft">Creation of</span> <span class="hover:text-mycyan" >Jules Wyvern</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/js/jquery.min.js"></script>
+    <script type="module" src="/js/semantic.min.js"></script>
+    <script type="module" src="/main.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
