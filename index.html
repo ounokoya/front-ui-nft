@@ -20,7 +20,7 @@
 </head>
 <body>
 
-  <div class="w-screen h-screen flex justify-center items-center " style="background-color: hsl(217, 54%, 11%);" >
+  <main class="w-screen h-screen flex justify-center items-center " style="background-color: hsl(217, 54%, 11%);" >
     <div class="relative w-80 p-4 sm:w-80 rounded-xl" style="height: 450px; ;background-color: hsl(216, 50%, 16%);">
       <!--image-->
       
@@ -30,7 +30,7 @@
             <div class="absolute  top-0 left-0 rounded-xl w-full h-64 sm:h-64 sm:w-full bg-center bg-cover bg-[url('images/image-equilibrium.jpg')]" >
 
             </div>
-            <div  class="absolute hover:flex hover:justify-center hover:items-center opacity-0 hover:opacity-60  top-0 left-0  rounded-xl w-full h-64 sm:h-64 sm:w-full bg-mycyan">
+            <div  class=" imageok absolute hover:flex hover:justify-center hover:items-center opacity-0 hover:opacity-60  top-0 left-0  rounded-xl w-full h-64 sm:h-64 sm:w-full bg-mycyan">
               <div class="w-10 h-10 bg-center bg-cover bg-[url('images/icon-view.svg')]" >
 
               </div>
@@ -54,9 +54,9 @@
 
       <!--text-->
       <div class="mb-4">
-        <p class="text-lg mr-4"  style="color: hsl(215, 51%, 70%);">
+        <h1 class="text-lg mr-4"  style="color: hsl(215, 51%, 70%);">
           Our Equilibrium collection promotes balance and calm.
-        </p>
+        </h1>
       </div>
 
       <!--line 4-->
@@ -87,15 +87,23 @@
       </div>
     </div>
     </div>
-  </div>
+  </main>
   
-  <script type="module" src="/js/jquery.min.js"></script>
-    <script type="module" src="/js/semantic.min.js"></script>
-    <script type="module" src="/main.js"></script>
+  
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Koya Esdras</a>.
+  </footer>
+
+  <script type="module" src="/js/jquery.min.js"></script>
+  <script type="module" src="/js/semantic.min.js"></script>
+  <script type="module" src="/main.js"></script>
+  <script>
+    $('.imageok')
+      // default everything
+      .transition('fade')
+    ;
+  </script>
 </body>
 </html>
