@@ -40,6 +40,10 @@ Deux tests corrigés pendant la Phase 6 (commit `fix(test)`, toujours rouges sur
 
 Aucun écart.
 
-## 4. Verdict
+## 4. En ligne (Phase 12)
 
-Conforme à la spec et à la maquette validée (G3). Prêt pour la Phase 9 (README).
+`BASE_URL=https://ounokoya.github.io/front-ui-nft/ npx playwright test --workers=2` : **34 réussis sur 34**, écarts visuels identiques au local (0,40 %, 0,55 % et 2,39 %), sur la v2.0.0 déployée depuis la branche `gh-pages` (publication avec l'accord de Koya, 2026-11-05). GitHub a activé Pages de lui-même à la première publication de la branche `gh-pages`.
+
+## 5. Verdict
+
+Conforme à la spec et à la maquette validée (G3). README fait (Phase 9) ; v2.0.0 en ligne. Prêt pour « Edit solution » sur FM (Phase 13).
