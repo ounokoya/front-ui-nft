@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/front-ui-nft/assets/favicon-32x32-DQjEQYWa.png">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <script type="module" crossorigin src="/front-ui-nft/assets/index-C6js7_4V.js"></script>
+    <link rel="stylesheet" crossorigin href="/front-ui-nft/assets/index-CzFLZT_Y.css">
+  </head>
+  <!-- ADR-0006 : 3 rangées, la carte au centre de la fenêtre, le pied de page en bas -->
+  <body class="grid min-h-dvh grid-rows-[1fr_auto_1fr] bg-blue-950 font-sans">
+    <main class="row-start-2">
+      <article class="mx-auto w-[min(21.875rem,100%_-_3rem)] rounded-card bg-blue-900 p-6 pb-6.5 shadow-card sm:pb-8">
+        <!-- ADR-0005 : lien de l'œuvre pour le pointeur seulement ; le titre est le lien du clavier et des lecteurs d'écran (Q-B1) -->
+        <a class="group relative block overflow-clip rounded-image" href="#" tabindex="-1" aria-hidden="true">
+          <img class="block h-auto w-full" src="/front-ui-nft/assets/image-equilibrium-drQxGI4l.jpg" alt="" width="604" height="604">
+          <span class="absolute inset-0 grid place-items-center bg-cyan-400/50 opacity-0 transition-opacity duration-200 group-hover:opacity-100 motion-reduce:transition-none">
+            <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M0%200h48v48H0z'/%3e%3cpath%20d='M24%209C14%209%205.46%2015.22%202%2024c3.46%208.78%2012%2015%2022%2015%2010.01%200%2018.54-6.22%2022-15-3.46-8.78-11.99-15-22-15Zm0%2025c-5.52%200-10-4.48-10-10s4.48-10%2010-10%2010%204.48%2010%2010-4.48%2010-10%2010Zm0-16c-3.31%200-6%202.69-6%206s2.69%206%206%206%206-2.69%206-6-2.69-6-6-6Z'%20fill='%23FFF'%20fill-rule='nonzero'/%3e%3c/g%3e%3c/svg%3e" alt="" width="48" height="48">
+          </span>
+        </a>
+
+        <h1 class="mt-6.25 text-title font-semibold"><a class="card-link" href="#">Equilibrium #3429</a></h1>
+        <p class="mt-2.75 text-body-mobile font-light text-blue-500 sm:mt-4 sm:text-body">Our Equilibrium collection promotes balance and calm.</p>
+
+        <div class="mt-3.5 flex items-center justify-between text-meta-mobile sm:mt-5.75 sm:text-meta">
+          <p class="flex items-center gap-1.75 font-semibold text-cyan-400"><img src="data:image/svg+xml,%3csvg%20width='11'%20height='18'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2010.216%205.5%2018%200%2010.216l5.5%203.263%205.5-3.262ZM5.5%200l5.496%209.169L5.5%2012.43%200%209.17%205.5%200Z'%20fill='%2300FFF8'/%3e%3c/svg%3e" alt="" width="11" height="18">0.041 ETH</p>
+          <p class="flex items-center gap-1.5 text-blue-500"><img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.305%202.007a6.667%206.667%200%201%200%200%2013.334%206.667%206.667%200%200%200%200-13.334Zm2.667%207.334H8.305a.667.667%200%200%201-.667-.667V6.007a.667.667%200%200%201%201.334%200v2h2a.667.667%200%200%201%200%201.334Z'%20fill='%238BACD9'/%3e%3c/svg%3e" alt="" width="17" height="17">3 days left</p>
+        </div>
+
+        <div class="separator mt-4 flex items-center gap-4 pt-4 sm:mt-6">
+          <img class="size-8.25 rounded-full border border-white" src="/front-ui-nft/assets/image-avatar-CtSSaui_.png" alt="" width="33" height="33">
+          <p class="text-meta-mobile font-light text-blue-500 sm:text-meta">Creation of <a class="card-link font-normal" href="#">Jules Wyvern</a></p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="row-start-3 self-end py-4 text-center text-attribution text-blue-500">
+      Challenge by <a class="link focus-ring" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="link focus-ring" href="https://www.frontendmentor.io/profile/ounokoya">Koya Esdras</a>.
+    </footer>
+  </body>
+</html>
