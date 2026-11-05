@@ -22,4 +22,17 @@ Plan validé (G1, 2026-11-05) au niveau du programme : `frontmentor/specs/plan-r
 
 ## Analyse (Phase 2)
 
-`specs/visuel/front-ui-nft-analyse.png` (et `.excalidraw`), en attente de G2.
+`specs/visuel/front-ui-nft-analyse.png` (et `.excalidraw`).
+
+## Analyse validée (G2, 2026-11-05)
+
+Koya : « Je valide (G2) » pour le lot 2. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| Q-B1 | Liens sans destination ; image et titre vers le même endroit | href="#" ; un seul arrêt au clavier : le lien de l'image est retiré du clavier et des lecteurs d'écran, le titre le remplace |
+| Q-B2 | Survol de l'image | Voile Cyan 400 à 50 % et œil au centre, fondu de 200 ms, sans animation si prefers-reduced-motion |
+| Q-B3 | Images | Œuvre alt="" (son lien est retiré, le titre la nomme) ; icônes et avatar décoratifs |
+| Q-B4 | Attribution sur fond sombre (#3E52A3 à 2,47:1) | Liens en Cyan 400 (13,98:1), texte en Blue 500 ; survol sans soulignement, focus 2 px Cyan |
+| Q-B5 | Pas de maquette tablette | Carte de 350 px centrée dès 400 px ; en dessous, la carte à 24 px des bords |
+| Q-B6 | Refonte | Même dépôt en v2.0.0, GitHub Pages, « Edit solution » |
