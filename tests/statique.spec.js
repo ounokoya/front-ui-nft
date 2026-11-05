@@ -43,8 +43,10 @@ test('S19 — Règles FM : eslint sans erreur dans le JavaScript du dépôt', as
 })
 
 test('ADR-0003 — aucune couleur écrite en dur hors des tokens', () => {
+  // le texte de la page contient « #3429 » (titre de la spec) : dans le HTML, seuls les classes, les styles et les blocs <style> comptent
+  const html = readFileSync(root('index.html'), 'utf8')
   const sources = {
-    'index.html': readFileSync(root('index.html'), 'utf8'),
+    'index.html (classes, styles)': [...html.matchAll(/(?:class|style)="([^"]*)"|<style[^>]*>([\s\S]*?)<\/style>/g)].map((m) => m[1] ?? m[2]).join('\n'),
     // les tokens sont des propriétés personnalisées (--…) : seules leurs valeurs portent des couleurs
     'src/style.css (hors tokens)': readFileSync(root('src/style.css'), 'utf8').replace(/--[\w-]+\s*:[^;]+;/g, ''),
   }

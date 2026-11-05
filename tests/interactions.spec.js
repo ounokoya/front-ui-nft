@@ -77,7 +77,8 @@ test('S14 — 4 liens exposés ; un clic sur l\'œuvre mène où mène le titre 
   const target = await page.evaluate(({ x, y }) => document.elementFromPoint(x, y)?.closest('a')?.getAttribute('href') ?? null, spot)
   expect(target, 'lien sous le pointeur').toBe(await titleLink(page).getAttribute('href'))
   await page.mouse.click(spot.x, spot.y)
-  expect(page.url().endsWith('#'), page.url()).toBe(true)
+  // la navigation vers « # » est asynchrone : on attend l'adresse
+  await expect(page).toHaveURL(/#$/)
 })
 
 test('S15 — pied de page : texte Blue 500, liens Cyan soulignés, sans soulignement au survol ; bonnes adresses', async ({ page }) => {
