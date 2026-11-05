@@ -46,3 +46,10 @@ Koya : « Je valide (G3) » pour le lot 2. Maquette : `specs/visuel/penpot/maque
 | G3-1 | Tablette (Q-B5) | La carte desktop de 350 px centrée |
 | G3-2 | Seuils visuels | 5 % pour les 3 écrans calibrés |
 | G3-3 | Attribution | Texte Blue 500, liens et focus Cyan 400 (Q-B4) |
+
+## Spec, ADR et verrou code (2026-11-05)
+
+- Spec : `specs/specifications/nft-preview-card-component.md` ; tests écrits avant le code, contrôle rouge fait (voir les commits `test:`).
+- ADR : `specs/adr/v2.0/` (ADR-0003 à ADR-0006) et leurs fitness functions, contrôle rouge fait.
+- Polices : Koya accepte le téléchargement des paquets Fontsource (ADR-0004).
+- **Verrou code** : Koya confirme « Claude écrit le code ».
