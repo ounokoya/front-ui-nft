@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <script type="module" src="/src/main.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <script type="module" src="/src/main.js"></script>
   </head>
-<body>
+  <!-- ADR-0006 : 3 rangées, la carte au centre de la fenêtre, le pied de page en bas -->
+  <body class="grid min-h-dvh grid-rows-[1fr_auto_1fr] bg-blue-950 font-sans">
+    <main class="row-start-2">
+      <article class="mx-auto w-[min(21.875rem,100%_-_3rem)] rounded-card bg-blue-900 p-6 pb-6.5 shadow-card sm:pb-8">
+        <!-- ADR-0005 : lien de l'œuvre pour le pointeur seulement ; le titre est le lien du clavier et des lecteurs d'écran (Q-B1) -->
+        <a class="group relative block overflow-clip rounded-image" href="#" tabindex="-1" aria-hidden="true">
+          <img class="block h-auto w-full" src="./images/image-equilibrium.jpg" alt="" width="604" height="604">
+          <span class="absolute inset-0 grid place-items-center bg-cyan-400/50 opacity-0 transition-opacity duration-200 group-hover:opacity-100 motion-reduce:transition-none">
+            <img src="./images/icon-view.svg" alt="" width="48" height="48">
+          </span>
+        </a>
 
-  Equilibrium #3429
+        <h1 class="mt-6.25 text-title font-semibold"><a class="card-link" href="#">Equilibrium #3429</a></h1>
+        <p class="mt-2.75 text-body-mobile font-light text-blue-500 sm:mt-4 sm:text-body">Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+        <div class="mt-3.5 flex items-center justify-between text-meta-mobile sm:mt-5.75 sm:text-meta">
+          <p class="flex items-center gap-1.75 font-semibold text-cyan-400"><img src="./images/icon-ethereum.svg" alt="" width="11" height="18">0.041 ETH</p>
+          <p class="flex items-center gap-1.5 text-blue-500"><img src="./images/icon-clock.svg" alt="" width="17" height="17">3 days left</p>
+        </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <div class="separator mt-4 flex items-center gap-4 pt-4 sm:mt-6">
+          <img class="size-8.25 rounded-full border border-white" src="./images/image-avatar.png" alt="" width="33" height="33">
+          <p class="text-meta-mobile font-light text-blue-500 sm:text-meta">Creation of <a class="card-link font-normal" href="#">Jules Wyvern</a></p>
+        </div>
+      </article>
+    </main>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer class="row-start-3 self-end py-4 text-center text-attribution text-blue-500">
+      Challenge by <a class="link focus-ring" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="link focus-ring" href="https://www.frontendmentor.io/profile/ounokoya">Koya Esdras</a>.
+    </footer>
+  </body>
 </html>

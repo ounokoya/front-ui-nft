@@ -1,1 +1,78 @@
 @import "tailwindcss";
+/* ADR-0004 : Outfit servie avec le site */
+@import "@fontsource/outfit/300.css";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/600.css";
+
+/* ADR-0003 : tokens de la bibliothèque Penpot (specs/visuel/penpot/maquette.md) */
+@theme {
+  --color-*: initial;
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue-500: hsl(215, 51%, 70%);
+  --color-cyan-400: hsl(178, 100%, 50%); /* Q-B4 : aussi les liens de l'attribution (13,98:1) */
+  --color-blue-800: hsl(215, 32%, 27%);
+  --color-blue-900: hsl(216, 50%, 16%);
+  --color-blue-950: hsl(217, 54%, 11%);
+
+  --breakpoint-sm: 25rem; /* Q-B5 : textes desktop dès 400 px */
+
+  --font-sans: "Outfit", sans-serif;
+  --text-title: 1.375rem;
+  --text-title--line-height: 1.75rem;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.625rem;
+  --text-body-mobile: 1rem;
+  --text-body-mobile--line-height: 1.625rem;
+  --text-meta: 1rem;
+  --text-meta--line-height: 1.25rem;
+  --text-meta-mobile: 0.9375rem;
+  --text-meta-mobile--line-height: 1.25rem;
+  --text-attribution: 0.6875rem;
+  --text-attribution--line-height: 1.5;
+
+  --radius-card: 0.9375rem;
+  --radius-image: 0.5rem;
+  --shadow-card: 0 1.5625rem 3.125rem hsl(0 0% 0% / 10%);
+}
+
+/* contour de focus de 2 px Cyan 400 décalé de 2 px (spec §5) */
+@utility focus-ring {
+  &:focus-visible {
+    outline: 0.125rem solid var(--color-cyan-400);
+    outline-offset: 0.125rem;
+  }
+}
+
+/* titre et créateur : blancs, Cyan au survol */
+@utility card-link {
+  @apply focus-ring;
+  color: var(--color-white);
+  transition: color 200ms;
+  &:hover {
+    color: var(--color-cyan-400);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+/* Q-B4 : liens de l'attribution, soulignés sauf au survol */
+@utility link {
+  color: var(--color-cyan-400);
+  text-decoration-line: underline;
+  &:hover {
+    text-decoration-line: none;
+  }
+}
+
+/* ADR-0006 : trait décoratif au-dessus du créateur */
+@utility separator {
+  border-block-start: calc(var(--spacing) / 4) solid var(--color-blue-800);
+}
+
+@layer base {
+  body {
+    /* largeurs de lettres non arrondies au pixel : les lignes se coupent comme sur l'image FM */
+    text-rendering: geometricPrecision;
+  }
+}
