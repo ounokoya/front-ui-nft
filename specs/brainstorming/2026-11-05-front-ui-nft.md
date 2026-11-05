@@ -36,3 +36,13 @@ Koya : « Je valide (G2) » pour le lot 2. Toutes les propositions sont retenues
 | Q-B4 | Attribution sur fond sombre (#3E52A3 à 2,47:1) | Liens en Cyan 400 (13,98:1), texte en Blue 500 ; survol sans soulignement, focus 2 px Cyan |
 | Q-B5 | Pas de maquette tablette | Carte de 350 px centrée dès 400 px ; en dessous, la carte à 24 px des bords |
 | Q-B6 | Refonte | Même dépôt en v2.0.0, GitHub Pages, « Edit solution » |
+
+## Maquette validée (G3, 2026-11-05)
+
+Koya : « Je valide (G3) » pour le lot 2. Maquette : `specs/visuel/penpot/maquette.md`. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| G3-1 | Tablette (Q-B5) | La carte desktop de 350 px centrée |
+| G3-2 | Seuils visuels | 5 % pour les 3 écrans calibrés |
+| G3-3 | Attribution | Texte Blue 500, liens et focus Cyan 400 (Q-B4) |

@@ -1,6 +1,6 @@
 # Maquette Penpot — NFT preview card component (refonte v2.0.0)
 
-> SDL-FM 1.5.0 Phase 3 (remise à niveau, étape B, lot 2). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « NFT preview card ». **En attente de validation (G3).**
+> SDL-FM 1.5.0 Phase 3 (remise à niveau, étape B, lot 2). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « NFT preview card ». **Validée (G3, 2026-11-05)** avec les propositions : carte de 350 px en tablette (Q-B5), seuils de 5 %, attribution en Cyan.
 > Décisions G2 appliquées : un seul lien au clavier pour l'image et le titre (Q-B1), survol de l'image (Q-B2), images décoratives (Q-B3), attribution en Cyan (Q-B4), tablette (Q-B5).
 
 ## Rendu des exports
